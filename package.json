@@ -1,0 +1,30 @@
+{
+  "name": "acessi-saude-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "bunx husky install",
+    "lint": "bunx eslint src",
+    "typecheck": "bunx tsc --noEmit",
+    "test:unit": "bun test",
+    "test:integration": "bun test --config vitest.integration.config.ts",
+    "test:e2e": "bunx playwright test",
+    "test:a11y": "bunx axe-cli src",
+    "test": "bun run test:unit && bun run test:integration"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "axe-cli": "^3.2.1",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.0",
+    "playwright": "^1.41.0",
+    "typescript": "^5.3.0",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^1.2.0"
+  },
+  "trustedDependencies": ["chromedriver", "core-js", "esbuild", "@playwright/test"]
+}
