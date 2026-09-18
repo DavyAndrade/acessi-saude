@@ -1,0 +1,40 @@
+[
+  {
+    "filename": "2026-01-15-esus.json",
+    "url": "https://esus.saude.gov.br",
+    "timestamp": "2026-01-15T10:30:00Z",
+    "summary": {
+      "total": 5,
+      "bySeverity": {
+        "critical": 2,
+        "serious": 2,
+        "moderate": 1,
+        "minor": 0
+      },
+      "byLevel": {
+        "A": 2,
+        "AA": 3,
+        "AAA": 0
+      }
+    }
+  },
+  {
+    "filename": "2026-01-10-conectesus.json",
+    "url": "https://conectesus.saude.gov.br",
+    "timestamp": "2026-01-10T14:22:00Z",
+    "summary": {
+      "total": 5,
+      "bySeverity": {
+        "critical": 0,
+        "serious": 4,
+        "moderate": 1,
+        "minor": 1
+      },
+      "byLevel": {
+        "A": 5,
+        "AA": 0,
+        "AAA": 0
+      }
+    }
+  }
+]

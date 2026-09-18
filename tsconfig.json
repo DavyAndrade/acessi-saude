@@ -11,12 +11,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "jsx": "react-jsx"
   },
-  "include": ["src", "**/*.test.ts"],
-  "exclude": ["node_modules", "dist"]
+  "references": [{ "path": "./frontend" }],
+  "include": [],
+  "exclude": ["node_modules", "dist", "frontend"]
 }

@@ -1,0 +1,125 @@
+{
+  "url": "https://conectesus.saude.gov.br",
+  "timestamp": "2026-01-10T14:22:00Z",
+  "userAgent": "Mozilla/5.0 (compatible; AcessiSaude/1.0)",
+  "viewport": { "width": 1280, "height": 720 },
+  "violations": [
+    {
+      "id": "link-name-1",
+      "ruleId": "link-name",
+      "ruleDescription": "Links devem ter nome acessível",
+      "help": "Links devem ter texto discernível que descreva o destino, propósito ou ação.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name",
+      "severity": "serious",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag244", "wcag412"],
+      "lbiArticle": "Art. 6º, §1º, IV - Nomes de links descritivos",
+      "nodes": [
+        {
+          "html": "<a href=\"/agendar\"><svg>...</svg></a>",
+          "target": ["a[href='/agendar']"],
+          "xpath": "/html/body/main/a[1]"
+        }
+      ],
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag244", "wcag412", "cat.navigation"]
+    },
+    {
+      "id": "button-name-1",
+      "ruleId": "button-name",
+      "ruleDescription": "Botões devem ter nome acessível",
+      "help": "Botões devem ter texto discernível que descreva a ação que será realizada.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name",
+      "severity": "serious",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag412"],
+      "lbiArticle": "Art. 6º, §1º, V - Nomes de botões descritivos",
+      "nodes": [
+        {
+          "html": "<button class=\"icon-btn\"><svg>...</svg></button>",
+          "target": ["button.icon-btn"],
+          "xpath": "/html/body/header/button[1]"
+        }
+      ],
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag412", "cat.forms"]
+    },
+    {
+      "id": "landmark-main-1",
+      "ruleId": "landmark-one-main",
+      "ruleDescription": "Página deve ter exatamente um landmark main",
+      "help": "A página deve conter exatamente um elemento main ou role=main.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main",
+      "severity": "moderate",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag131"],
+      "lbiArticle": "Art. 6º, §1º, VII - Região principal única",
+      "nodes": [
+        {
+          "html": "<div class=\"content\">...</div>",
+          "target": [".content"],
+          "xpath": "/html/body/div[2]"
+        }
+      ],
+      "impact": "moderate",
+      "tags": ["wcag2a", "wcag131", "cat.structure"]
+    },
+    {
+      "id": "skip-link-1",
+      "ruleId": "skip-link",
+      "ruleDescription": "Página deve ter link de salto para conteúdo principal",
+      "help": "Deve haver um mecanismo para pular blocos de conteúdo repetidos (skip link).",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/skip-link",
+      "severity": "serious",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag241"],
+      "lbiArticle": "Art. 6º, §2º, IV - Link de salto",
+      "nodes": [
+        {
+          "html": "<body>...sem skip link...</body>",
+          "target": ["body"],
+          "xpath": "/html/body"
+        }
+      ],
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag241", "cat.keyboard"]
+    },
+    {
+      "id": "html-lang-1",
+      "ruleId": "html-has-lang",
+      "ruleDescription": "Elemento html deve ter atributo lang",
+      "help": "O elemento html deve ter um atributo lang válido para identificar o idioma da página.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang",
+      "severity": "minor",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag311"],
+      "lbiArticle": "Art. 6º, §4º, II - Idioma da página",
+      "nodes": [
+        {
+          "html": "<html>...",
+          "target": ["html"],
+          "xpath": "/html"
+        }
+      ],
+      "impact": "minor",
+      "tags": ["wcag2a", "wcag311", "cat.language"]
+    }
+  ],
+  "passes": [],
+  "incomplete": [],
+  "inapplicable": [],
+  "summary": {
+    "total": 5,
+    "bySeverity": {
+      "critical": 0,
+      "serious": 4,
+      "moderate": 1,
+      "minor": 1
+    },
+    "byLevel": {
+      "A": 5,
+      "AA": 0,
+      "AAA": 0
+    }
+  }
+}

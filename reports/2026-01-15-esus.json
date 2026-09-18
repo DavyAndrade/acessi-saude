@@ -1,0 +1,125 @@
+{
+  "url": "https://esus.saude.gov.br",
+  "timestamp": "2026-01-15T10:30:00Z",
+  "userAgent": "Mozilla/5.0 (compatible; AcessiSaude/1.0)",
+  "viewport": { "width": 1280, "height": 720 },
+  "violations": [
+    {
+      "id": "color-contrast-1",
+      "ruleId": "color-contrast",
+      "ruleDescription": "Elementos devem ter contraste de cor suficiente",
+      "help": "Texto e elementos interativos devem ter uma taxa de contraste de pelo menos 4.5:1 para texto normal e 3:1 para texto grande.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast",
+      "severity": "serious",
+      "wcagLevel": "AA",
+      "wcagTags": ["wcag2aa", "wcag143"],
+      "lbiArticle": "Art. 6º, §1º, I - Contraste mínimo",
+      "nodes": [
+        {
+          "html": "<button class=\"btn-primary\" style=\"color: #999; background: #fff;\">Entrar</button>",
+          "target": ["button.btn-primary"],
+          "xpath": "/html/body/header/nav/button[1]"
+        }
+      ],
+      "impact": "serious",
+      "tags": ["wcag2aa", "wcag143", "cat.color"]
+    },
+    {
+      "id": "image-alt-1",
+      "ruleId": "image-alt",
+      "ruleDescription": "Imagens devem ter texto alternativo",
+      "help": "Todas as imagens devem ter um atributo alt que descreva o conteúdo ou função da imagem.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-alt",
+      "severity": "critical",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag111"],
+      "lbiArticle": "Art. 6º, §1º, II - Texto alternativo em imagens",
+      "nodes": [
+        {
+          "html": "<img src=\"/logo.svg\" class=\"logo\">",
+          "target": ["img.logo"],
+          "xpath": "/html/body/header/img[1]"
+        }
+      ],
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag111", "cat.text-alternatives"]
+    },
+    {
+      "id": "label-1",
+      "ruleId": "label",
+      "ruleDescription": "Elementos de formulário devem ter rótulos",
+      "help": "Cada elemento de entrada deve ter um rótulo associado programaticamente.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/label",
+      "severity": "critical",
+      "wcagLevel": "A",
+      "wcagTags": ["wcag2a", "wcag131", "wcag412"],
+      "lbiArticle": "Art. 6º, §1º, III - Rótulos em formulários",
+      "nodes": [
+        {
+          "html": "<input type=\"email\" placeholder=\"Seu e-mail\" name=\"email\">",
+          "target": ["input[name='email']"],
+          "xpath": "/html/body/main/form/input[1]"
+        }
+      ],
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag131", "wcag412", "cat.forms"]
+    },
+    {
+      "id": "heading-order-1",
+      "ruleId": "heading-order",
+      "ruleDescription": "Cabeçalhos devem seguir ordem lógica",
+      "help": "Os cabeçalhos devem ser aninhados corretamente (h1, h2, h3, etc.) sem pular níveis.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/heading-order",
+      "severity": "moderate",
+      "wcagLevel": "AA",
+      "wcagTags": ["wcag2aa", "wcag131"],
+      "lbiArticle": "Art. 6º, §1º, VI - Ordem lógica de cabeçalhos",
+      "nodes": [
+        {
+          "html": "<h3>Subseção</h3>",
+          "target": ["h3"],
+          "xpath": "/html/body/main/section/h3"
+        }
+      ],
+      "impact": "moderate",
+      "tags": ["wcag2aa", "wcag131", "cat.structure"]
+    },
+    {
+      "id": "focus-visible-1",
+      "ruleId": "focus-visible",
+      "ruleDescription": "Elementos focáveis devem ter indicador de foco visível",
+      "help": "Elementos que recebem foco de teclado devem ter um indicador visual claro.",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/focus-visible",
+      "severity": "serious",
+      "wcagLevel": "AA",
+      "wcagTags": ["wcag2aa", "wcag247"],
+      "lbiArticle": "Art. 6º, §2º, II - Foco visível",
+      "nodes": [
+        {
+          "html": "<a href=\"/login\" class=\"link\">Login</a>",
+          "target": ["a.link"],
+          "xpath": "/html/body/header/nav/a[2]"
+        }
+      ],
+      "impact": "serious",
+      "tags": ["wcag2aa", "wcag247", "cat.keyboard"]
+    }
+  ],
+  "passes": [],
+  "incomplete": [],
+  "inapplicable": [],
+  "summary": {
+    "total": 5,
+    "bySeverity": {
+      "critical": 2,
+      "serious": 2,
+      "moderate": 1,
+      "minor": 0
+    },
+    "byLevel": {
+      "A": 2,
+      "AA": 3,
+      "AAA": 0
+    }
+  }
+}
