@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/46</span>
+                <span class='fraction'>0/55</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/46</span>
+                <span class='fraction'>0/55</span>
             </div>
         
             
@@ -118,9 +118,6 @@
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -135,14 +132,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -152,12 +141,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -165,16 +148,33 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { useMemo } from 'react';</span></span></span>
-import type { Violation, Severity, WCAGLevel, GroupedViolations } from '@/types/audit';
-import { sortBySeverity } from '@/utils/severity';
-&nbsp;
+<span class="cstat-no" title="statement not covered" >import type { Violation, Severity, WCAGLevel, GroupedViolations } from '@/types/audit';</span>
+<span class="cstat-no" title="statement not covered" >import { sortBySeverity } from '@/utils/severity';</span>
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >export function useViolations(violations: Violation[]) {</span>
 <span class="cstat-no" title="statement not covered" >  const grouped = useMemo((): GroupedViolations =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    const bySeverity: GroupedViolations['bySeverity'] = {</span>
@@ -189,14 +189,14 @@ import { sortBySeverity } from '@/utils/severity';
 <span class="cstat-no" title="statement not covered" >      AAA: [],</span>
 <span class="cstat-no" title="statement not covered" >    };</span>
 <span class="cstat-no" title="statement not covered" >    const byRule: GroupedViolations['byRule'] = {};</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    for (const v of violations) {</span>
 <span class="cstat-no" title="statement not covered" >      bySeverity[v.severity].push(v);</span>
 <span class="cstat-no" title="statement not covered" >      byLevel[v.wcagLevel].push(v);</span>
 <span class="cstat-no" title="statement not covered" >      if (!byRule[v.ruleId]) byRule[v.ruleId] = [];</span>
 <span class="cstat-no" title="statement not covered" >      byRule[v.ruleId].push(v);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    for (const key of Object.keys(bySeverity) as Severity[]) {</span>
 <span class="cstat-no" title="statement not covered" >      bySeverity[key] = sortBySeverity(bySeverity[key]);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
@@ -206,12 +206,12 @@ import { sortBySeverity } from '@/utils/severity';
 <span class="cstat-no" title="statement not covered" >    for (const key of Object.keys(byRule)) {</span>
 <span class="cstat-no" title="statement not covered" >      byRule[key] = sortBySeverity(byRule[key]);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    return { bySeverity, byLevel, byRule };</span>
 <span class="cstat-no" title="statement not covered" >  }, [violations]);</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  const sortedViolations = useMemo(() =&gt; sortBySeverity(violations), [violations]);</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  const getViolationsByTab = useMemo(() =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    return {</span>
 <span class="cstat-no" title="statement not covered" >      severity: grouped.bySeverity,</span>
@@ -219,7 +219,7 @@ import { sortBySeverity } from '@/utils/severity';
 <span class="cstat-no" title="statement not covered" >      rule: grouped.byRule,</span>
 <span class="cstat-no" title="statement not covered" >    };</span>
 <span class="cstat-no" title="statement not covered" >  }, [grouped]);</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  return {</span>
 <span class="cstat-no" title="statement not covered" >    violations: sortedViolations,</span>
 <span class="cstat-no" title="statement not covered" >    grouped,</span>
@@ -232,7 +232,7 @@ import { sortBySeverity } from '@/utils/severity';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-09-18T19:26:22.220Z
+                at 2026-09-24T02:08:51.476Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

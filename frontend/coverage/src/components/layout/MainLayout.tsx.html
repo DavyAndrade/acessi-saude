@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>0/30</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>0/30</span>
             </div>
         
             
@@ -93,19 +93,6 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -113,28 +100,41 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { useState } from 'react';</span></span></span>
-import { Header } from './Header';
-import { Sidebar } from './Sidebar';
-import { FilterProvider } from '@/context/FilterContext';
-import type { AuditMeta } from '@/types/audit';
-&nbsp;
-interface MainLayoutProps {
-  children: React.ReactNode;
-  manifest: AuditMeta[];
-}
-&nbsp;
+<span class="cstat-no" title="statement not covered" >import { Header } from './Header';</span>
+<span class="cstat-no" title="statement not covered" >import { Sidebar } from './Sidebar';</span>
+<span class="cstat-no" title="statement not covered" >import { FilterProvider } from '@/context/FilterContext';</span>
+<span class="cstat-no" title="statement not covered" >import type { AuditMeta } from '@/types/audit';</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >interface MainLayoutProps {</span>
+<span class="cstat-no" title="statement not covered" >  children: React.ReactNode;</span>
+<span class="cstat-no" title="statement not covered" >  manifest: AuditMeta[];</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >export function MainLayout({ children, manifest }: MainLayoutProps) {</span>
 <span class="cstat-no" title="statement not covered" >  const [sidebarOpen, setSidebarOpen] = useState(false);</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  return (</span>
 <span class="cstat-no" title="statement not covered" >    &lt;FilterProvider manifest={manifest}&gt;</span>
 <span class="cstat-no" title="statement not covered" >      &lt;div className="min-h-screen bg-background flex"&gt;</span>
@@ -142,14 +142,14 @@ interface MainLayoutProps {
 <span class="cstat-no" title="statement not covered" >          open={sidebarOpen}</span>
 <span class="cstat-no" title="statement not covered" >          onOpenChange={setSidebarOpen}</span>
 <span class="cstat-no" title="statement not covered" >        /&gt;</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >        &lt;div className="flex-1 flex flex-col min-w-0"&gt;</span>
 <span class="cstat-no" title="statement not covered" >          &lt;Header onMenuClick={() =&gt; setSidebarOpen(true)} /&gt;</span>
 <span class="cstat-no" title="statement not covered" >          &lt;main className="flex-1 p-4 lg:p-6 overflow-auto"&gt;{children}&lt;/main&gt;</span>
 <span class="cstat-no" title="statement not covered" >        &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >    &lt;/FilterProvider&gt;</span>
-  );
+<span class="cstat-no" title="statement not covered" >  );</span>
 <span class="cstat-no" title="statement not covered" >}</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -157,7 +157,7 @@ interface MainLayoutProps {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-09-18T19:26:22.220Z
+                at 2026-09-24T02:08:51.476Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
