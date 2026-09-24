@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">94.73% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>76/76</span>
+                <span class='fraction'>72/76</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">82.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>23/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">94.73% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>76/76</span>
+                <span class='fraction'>72/76</span>
             </div>
         
             
@@ -199,14 +199,14 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -219,9 +219,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -233,9 +233,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import type { Severity, WCAGLevel } from '@/types/audit';
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { Severity, WCAGLevel } from '@/types/audit';
 &nbsp;
 export const SEVERITY_ORDER: Record&lt;Severity, number&gt; = {
   critical: 0,
@@ -283,16 +283,16 @@ export function sortBySeverity&lt;T extends { severity: Severity }&gt;(
 ): T[] {
   return [...items].sort((a, b) =&gt; {
     const diff = SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity];
-    return ascending ? diff : -diff;
-  });
-}
+    return ascending ? diff : -<span class="branch-0 cbranch-no" title="branch not covered" >diff;</span>
+  }<span class="branch-0 cbranch-no" title="branch not covered" >);</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 export function getHighestSeverity(violations: { severity: Severity }[]): Severity | null {
   if (violations.length === 0) return null;
   return violations.reduce((highest, current) =&gt;
     SEVERITY_ORDER[current.severity] &lt; SEVERITY_ORDER[highest.severity] ? current : highest
-  ).severity;
-}
+  ).<span class="branch-0 cbranch-no" title="branch not covered" >severity;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 export function countBySeverity(
   violations: { severity: Severity }[]
@@ -306,8 +306,8 @@ export function countBySeverity(
   for (const v of violations) {
     counts[v.severity]++;
   }
-  return counts;
-}
+  return <span class="branch-0 cbranch-no" title="branch not covered" >counts;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 export function countByLevel(
   violations: { wcagLevel: WCAGLevel }[]
@@ -320,15 +320,15 @@ export function countByLevel(
   for (const v of violations) {
     counts[v.wcagLevel]++;
   }
-  return counts;
-}</pre></td></tr></table></pre>
+  return <span class="branch-0 cbranch-no" title="branch not covered" >counts;</span>
+<span class="cstat-no" title="statement not covered" >}</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-09-18T19:26:22.220Z
+                at 2026-09-24T01:35:05.071Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

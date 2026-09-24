@@ -8,7 +8,7 @@
     "lint": "bunx eslint src",
     "typecheck": "bunx tsc --noEmit",
     "test:unit": "bun test src/placeholder.test.ts && cd frontend && bun run test:unit",
-    "test:integration": "bun test --config vitest.integration.config.ts",
+    "test:integration": "echo 'TODO: nenhum teste de integração implementado ainda (vitest.integration.config.ts não existe)'",
     "test:e2e": "bunx playwright test",
     "test:a11y": "bunx axe-cli src",
     "test": "bun run test:unit && bun run test:integration"
