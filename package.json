@@ -10,7 +10,7 @@
     "test:unit": "bun test src/placeholder.test.ts && cd frontend && bun run test:unit",
     "test:integration": "echo 'TODO: nenhum teste de integração implementado ainda (vitest.integration.config.ts não existe)'",
     "test:e2e": "echo 'TODO: nenhum teste e2e implementado ainda (falta playwright.config.ts)'",
-    "test:a11y": "bunx axe-cli src",
+    "test:a11y": "echo 'TODO: axe-cli precisa de uma URL real (ex: dashboard rodando localmente), nao de um caminho de pasta'",
     "test": "bun run test:unit && bun run test:integration"
   },
   "devDependencies": {
